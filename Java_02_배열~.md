@@ -117,13 +117,13 @@ public static int[] passRefer2(int[] a, int offset,int len) {
 		
 		/*
 		 * Arrays.copyOf(orginal, newLength)
-		 *  newLength 크기의 배열을 생성해서 새로운 배열에 orginal의 값을 복사해서 			리턴
+		 *  newLength 크기의 배열을 생성해서 새로운 배열에 orginal의 값을 복사해서 리턴
 		 */
 		System.out.println(Arrays.toString(Arrays.copyOf(src, src.length+7)));
 		
 		/*
 		 * Arrays.copyOfRange(orginal, from,to)
-		 * orginal 배열의 값중 from 위치의 데이터 부터 to위치 전 데이터까지 복사해			서 리턴
+		 * orginal 배열의 값중 from 위치의 데이터 부터 to위치 전 데이터까지 복사해서 리턴
 		 */
 		System.out.println(Arrays.toString(Arrays.copyOfRange(src, 3,6)));
 ```
