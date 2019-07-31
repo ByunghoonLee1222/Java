@@ -48,8 +48,10 @@
      처리 방법이 같아지므로 기존 코드를 변경하지 않고 수정된 내용을 반영할 수 있다.
 
   2. 기능이 동일한 경우 부모 객체, 자식 객체 구별하지 않고 같은 이름으로 함수를 호출한다.
+     
      * 호출에 대한 편리성
   3. 다형성 관계에서는 Override된 메서드가 호출됨(Virtual Invocation)
+     
      * 기존 코드를 변경하지 않고 수정된 내용을 반영할 수 있다.
 
 * **규칙**
@@ -86,7 +88,8 @@
   	}
   ```
 
-* 부모의 기본생성자가 없으면 오류
+* **부모의 기본생성자가 없으면 오류**
+  
   * 컴파일러가 자동으로 super();호출
 * 해결방법 : 인자있는 생성자를 명시적으로 호출해 준다. (ex. super("ssafy",2,"역삼"); )
 
@@ -95,9 +98,12 @@
 ### Polymorphism(다형성)
 
 * Method (**호출에 대한 편리성 제공**)
-  * 인자에 따라서 : Method Overloading
-  * 부모 or 자식 따라서 : Mehtod Overriding
-
+  
+  * 인자에 따라서 : **Method Overloading**
+  * 인자만 다르게 - 리턴타입,제한자는 상관 X
+  * 부모 or 자식 따라서 : **Mehtod Overriding**
+    * 인자같고 ,리턴타입도 같게 access modifier은 더 넓게 (자식 method)
+  
 * Data
   * Primitive : (***자동 형변환***)byte => short(char) => int => long => float => double
     * double, boolean 두 인자로 모든 인자 포함 가능
@@ -105,8 +111,9 @@
     * Super 타입 = new Sub 객체
 
 * **Shadow Impact**
-  * 다형성 관계에서 sub에 추가된 속성이나 메서드에 접근 불가
-
+  
+* 다형성 관계에서 sub에 추가된 속성이나 메서드에 접근 불가
+  
 * **Reference type 형변환**
 
   * 자동 형변환(Up casting)
