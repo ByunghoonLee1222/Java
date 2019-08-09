@@ -42,3 +42,51 @@ wait pool / lock pool 존재
 wait() 실행 시 wait pool에서 대기하며 lock pool에 lock flag 반납 
 
 다음 객체가 lockflag를 받아 처리하면 notify()를 실행시켜 wait pool에서 꺼낸다
+
+```java
+public void save() {
+		new Thread() {
+			public void run() {
+				FileOutputStream fos = null;
+				ObjectOutputStream oos = null;
+				try {
+					fos = new FileOutputStream(fileName);
+					oos = new ObjectOutputStream(fos);
+					oos.writeObject(products);
+					System.out.println("저장 완료");
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					IOUtill.close(oos);
+					IOUtill.close(fos);
+				}
+			}
+		}.start();
+	}
+
+
+public void send() {
+		new Thread() {
+			public void run() {
+				// 한번 데이타 전송후 연결이 끊어지므로 데이타를 전송할 때마다 서버에 연결 시도
+				Socket s = null;
+				ObjectOutputStream oos = null;
+
+				try {
+					s = new Socket("localhost", 5431);
+					oos = new ObjectOutputStream(s.getOutputStream());
+					oos.writeObject(onlytv());
+					oos.writeObject(onlyrefrigerator());
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					IOUtill.close(oos);
+					IOUtill.close(s);
+				}
+			}
+		}.start();
+	}
+
+
+```
+
