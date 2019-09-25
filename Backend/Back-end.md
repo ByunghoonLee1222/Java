@@ -103,7 +103,7 @@ http://localhost:8080/0919/form.html
   * network로 전송 --> String
 * attribute
   * 계속 추가 가능
-  * 서버의 JVM에서 동작 --> 모든 데이터 아비을 다 관리 가능(객체 관리)
+  * 서버의 JVM에서 동작 --> 모든 데이터를 다 관리 가능(객체 관리)
 
 * 서버에서 attribute를 관리할 수 있는 요소들
   * PageContext < HttpServletRequest < HttpSession < ServletContext => Servlet에서
@@ -114,3 +114,4 @@ http://localhost:8080/0919/form.html
 * xx.setAttribute(String key, Object v);
 * Object xx.getAttribute(String key)
 * xx.removeAttribute(String key)
+
