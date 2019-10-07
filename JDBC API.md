@@ -1,7 +1,6 @@
 # JDBC API
 
 * DB 통신 프로토콜은 DB제공사 측에서 클라이언트로 제공(jdbc driver)
-* 
 
 
 
