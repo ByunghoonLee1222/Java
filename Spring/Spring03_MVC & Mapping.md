@@ -2,9 +2,7 @@
 
 #### 흐름도
 
-![springmvc](C:\Users\student\Desktop\springmvc.jpg)
-
-
+![](C:\Users\student\Desktop\정리\byunghoon\SSAFY_Java\img\springmvc.jpg)
 
 #### mapping
 
@@ -23,7 +21,7 @@
              - 요청 url
              - 다른 속성이 없으면 생략이 가능하다
              	- 형식 ] value="url"
-                		   value="{url, ...}"
+               	 		   value="{url, ...}"
 
    - spring 4.x에서 추가된	=> pom.xml에서 spring version check
 

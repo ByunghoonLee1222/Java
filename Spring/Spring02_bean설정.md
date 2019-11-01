@@ -1,4 +1,4 @@
-# Spring_2
+# Spring bean
 
 **bean 설정**
 
