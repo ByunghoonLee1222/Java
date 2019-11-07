@@ -1,6 +1,6 @@
 # REST(Representational State Transfer)
 
-![RestFul](C:\Users\student\Desktop\정리\byunghoon\SSAFY_Java\img\RestFul.jpg)
+![RestFul](img/RestFul.jpg)
 
 - Front-End : 사용자의 입력을 받아들어거나 보여주는 역할 (I/O) interaction
 
