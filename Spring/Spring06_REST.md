@@ -1,5 +1,5 @@
 # REST(Representational State Transfer)
-![img](img/RestFul.jpg)
+![img](img/RestFul.JPG)
 
 - Front-End : 사용자의 입력을 받아들어거나 보여주는 역할 (I/O) interaction
 
